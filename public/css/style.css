@@ -1,0 +1,29 @@
+body{
+	background-color: #66cc91 !important;
+}
+
+.numbers{
+	font-size: 45px;
+	border-bottom: 1px solid black;
+	border-height: 50px;
+}
+
+.firstlabel{
+	color: white;
+	font-family: Arial;
+	font-size: 30px;
+}
+
+.form-group{
+	width:80px;
+}
+
+.labels{
+	color:white;
+	font-size: 20px;
+}
+
+.input-lg{
+width: 100px;
+}
+
