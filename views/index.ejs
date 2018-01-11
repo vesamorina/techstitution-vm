@@ -1,11 +1,9 @@
 <% include partials/header%>
 <% include partials/nav%>
-<div class="container-fluid">
-<form class = "form-horizontal" action="/add" method = "POST">
-
-    <h1>1.</h1>
-    
+<div class="container">
+<form class = "form-horizontal" action="/add" method = "POST">    
     <div class="row">
+
         <div class="col-sm-4"><h4>Pika kufitare</h4></div>
         <div class="col-sm-4">
             <select class="form-control" id ="pika_kufitare" name = "pika_kufitare">
@@ -18,11 +16,37 @@
                 <option>Morine</option>
                 <option>Vermic</option>
                 <option>Merdare</option>
-                <option>Kulle</option>
+                <option>Kulle</option> 
                 <option>Mutivode</option>
                 <option>Jarinje</option>    
             </select>
         </div>
+    </div>
+    
+    <h1>1.</h1>
+    
+    <h3>Hyrje</h3>
+    <div class="row">
+        <div class="col-sm-4"><h4>Minimum</h4></div>
+        <div class="col-sm-4"><input name="hyrje_min_minuta" type="text" class="form-control" required></div>
+        <div class="col-sm-4">Minuta</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"><h4>Maximum</h4></div>
+        <div class="col-sm-4"><input name="hyrje_max_minuta" type="text" class="form-control" required></div>
+        <div class="col-sm-4">Minuta</div>
+    </div>
+    
+    <h3>Dalje</h3>
+    <div class="row">
+        <div class="col-sm-4"><h4>Minimum</h4></div>
+        <div class="col-sm-4"><input name="dalje_min_minuta" type="text" class="form-control" required></div>
+        <div class="col-sm-4">Minuta</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4"><h4>Maximum</h4></div>
+        <div class="col-sm-4"><input name="dalje_max_minuta" type="text" class="form-control" required></div>
+        <div class="col-sm-4">Minuta</div>
     </div>
     
     <h1>2.</h1>
@@ -30,58 +54,31 @@
     <h3>Hyrje</h3>
     <div class="row">
         <div class="col-sm-4"><h4>Minimum</h4></div>
-        <div class="col-sm-4"><input name="hyrje_min_minuta" type="text" class="form-control" ></div>
-        <div class="col-sm-4">Minuta</div>
-    </div>
-    <div class="row">
-        <div class="col-sm-4"><h4>Maximum</h4></div>
-        <div class="col-sm-4"><input name="hyrje_max_minuta" type="text" class="form-control" ></div>
-        <div class="col-sm-4">Minuta</div>
-    </div>
-    
-    <h3>Dalje</h3>
-    <div class="row">
-        <div class="col-sm-4"><h4>Minimum</h4></div>
-        <div class="col-sm-4"><input name="dalje_min_minuta" type="text" class="form-control" ></div>
-        <div class="col-sm-4">Minuta</div>
-    </div>
-    <div class="row">
-        <div class="col-sm-4"><h4>Maximum</h4></div>
-        <div class="col-sm-4"><input name="dalje_max_minuta" type="text" class="form-control" ></div>
-        <div class="col-sm-4">Minuta</div>
-    </div>
-    
-    <h1>3.</h1>
-    
-    <h3>Hyrje</h3>
-    <div class="row">
-        <div class="col-sm-4"><h4>Minimum</h4></div>
-        <div class="col-sm-4"><input name="hyrje_min_metra" type="text" class="form-control" ></div>
+        <div class="col-sm-4"><input name="hyrje_min_metra" type="text" class="form-control" required></div>
         <div class="col-sm-4">Metra</div>
     </div>
     <div class="row">
         <div class="col-sm-4"><h4>Maximum</h4></div>
-        <div class="col-sm-4"><input name="hyrje_max_metra" type="text" class="form-control"></div>
+        <div class="col-sm-4"><input name="hyrje_max_metra" type="text" class="form-control" required></div>
         <div class="col-sm-4">Metra</div>
     </div>
     
     <h3>Dalje</h3>
     <div class="row">
         <div class="col-sm-4"><h4>Minimum</h4></div>
-        <div class="col-sm-4"><input name="dalje_min_metra" type="text" class="form-control" ></div>
+        <div class="col-sm-4"><input name="dalje_min_metra" type="text" class="form-control" required></div>
         <div class="col-sm-4">Metra</div>
     </div>
     <div class="row">
         <div class="col-sm-4"><h4>Maximum</h4></div>
-        <div class="col-sm-4"><input name="dalje_max_metra" type="text" class="form-control" ></div>
+        <div class="col-sm-4"><input name="dalje_max_metra" type="text" class="form-control" required></div>
         <div class="col-sm-4">Metra</div>
     </div>
-    
+    <br> <br>
     <div class="row">
         <div class="col-sm-4"><button type="submit" class="btn btn-primary btn-block">Dergo</button></div>
-        <div class="col-sm-4"><button type="button" class="btn btn-primary btn-block">Fshij</button></div>
+        <div class="col-sm-4"><button type="button" class="btn btn-primary btn-block" onClick="refreshPage()">Fshij</button></div>
     </div>
- 
     
 </div>
 <% include partials/footer %>
